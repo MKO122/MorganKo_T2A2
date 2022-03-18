@@ -3,7 +3,11 @@
         <%=link_to "NFarT", root_path, class: "navbar-brand"%>
                                        <%# classes are optional hence : instead of = %>
     </div>
+
     <ul class="navbar-nav mr-5-lg">
+    <li class="nav-item">
+        <%=link_to "All listings", listings_path, class: "nav-link"%>
+    </li>
 <%if user_signed_in?%>
     <span>Hello, <%=current_user.email%> </span>
                  <%# Can be changed to pop up message in Navbar %>
