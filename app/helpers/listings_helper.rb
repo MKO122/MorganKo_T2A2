@@ -6,6 +6,6 @@ module ListingsHelper
     end 
     
     def format_price(price)
-        "$#{price/ 100.0}"
+        "$#{price/ 100.00}"
     end    
 end
