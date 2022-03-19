@@ -7,6 +7,7 @@
   </div>
   <div class='sidebar col-lg-4 p-0 mx-2 d-md-block'> 
     <h1 class='mb-sm-2 mb-md-5'><%=@listing.title%></h1>
-    <h4 class='text-muted mb-3'>Condition: <%=@listing.condition%></h4>
-    <h5 class='text-muted mb-3'>Price: <%=@listing.price%></h5>
+    <h4 class='text-muted mb-3'>Condition: <%=format_condition(@listing.condition)%></h4>
+    <h5 class='text-muted mb-3'>Price: <%=format_price(@listing.price)%></h5>
   </div>
+</section>
