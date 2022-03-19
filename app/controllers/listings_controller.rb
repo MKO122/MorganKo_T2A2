@@ -12,7 +12,7 @@ class ListingsController < ApplicationController
   end
 
   def new
-    @listings = Listing.new
+    @listing = Listing.new
   end
 
   def create

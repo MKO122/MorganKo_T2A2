@@ -4,8 +4,8 @@
     <%@listings.each do |listing|%>
     <div class="col mb-4">
       <div class="card border-dark h-100">
-        <%if @listing.picture.attached?%>
-          <%=image_tag @listing.picture, alt: @listing.title, class:"thumbnail card-img top"%>
+        <%if listing.picture.attached?%>
+          <%=image_tag listing.picture, alt: listing.title, class:"thumbnail card-img top"%>
         <%else%>
           <%=image_tag "Default.jpg", alt: "top view of assorted paint cans", class:"thumbnail card-img top"%>
         <%end%>
