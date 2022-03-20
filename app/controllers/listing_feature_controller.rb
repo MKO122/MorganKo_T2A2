@@ -1,0 +1,2 @@
+class ListingFeatureController < ApplicationController
+end
