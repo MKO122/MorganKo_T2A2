@@ -34,5 +34,8 @@ module NFarT
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    if ENV["PIPE_ENV"].present?
+      Rails.application.config.credentials.content_path = Rails.root.join("config/credentials/#{ENV["PIPE_ENV"]}.yml.enc")
+    end
   end
 end
