@@ -9,7 +9,7 @@ class ListingsController < ApplicationController
   end
 
   def show
-    # @listing = Listing.find(params[:id])
+ 
   end
 
   def new
@@ -48,8 +48,7 @@ class ListingsController < ApplicationController
   private
 
   def listing_params
-    params.require(:listing).permit(:title, :price, :category_id, :condition, :description, :picture) 
-      #, feature_ids: [])
+    params.require(:listing).permit(:title, :price, :category_id, :condition, :description, :picture, feature_ids: [])
   end
 
   def authorize_user 
@@ -66,7 +65,7 @@ class ListingsController < ApplicationController
   def set_form_vars
     @categories = Category.all
     @conditions = Listing.conditions.keys
-    # @features = Feature.all
+    @features = Feature.all
   end
 
 end

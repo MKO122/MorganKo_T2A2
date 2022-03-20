@@ -15,5 +15,11 @@ if Category.count == 0
     end
 end
 
-#Conditions = ["longing stares into the horizon", "sisyphus","left at the altar"]
-#Started, midway, unfinished
+features = ["aesthetic", "functional", "intellectually stimulating", "emotionally stimulating"]
+
+if Feature.count == 0 
+    features.each do |f| 
+        Feature.create(name: f)
+        puts "created #{f} feature"
+    end 
+end
