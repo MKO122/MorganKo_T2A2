@@ -42,7 +42,7 @@
 
     <h5 class="mb-3 ml-2">Features</h5>
     <div class="form-check form-check-line mb-3 ml-2">
-        <%=f.collection_check_boxes :feature_ids, @features, :id, :name  do |b|%>
+        <%=f.collection_check_boxes :feature_ids, @features, :id, :name do |b|%>
             <%=b.label class: 'form-check-label'%>
            <%=b.check_box class: 'form-check-line mr-2'%>
         <%end%>
